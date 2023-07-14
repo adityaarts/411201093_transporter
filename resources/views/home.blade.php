@@ -33,12 +33,12 @@
               <div class="inner">
                 <h3>{{$totalPengiriman}}</h3>
 
-                <p>Jumlah Pengiriman pada 3 Bulan Terakhir</p>
+                <p>Total Pengiriman dalam 3 Bulan Terakhir</p>
               </div>
               <div class="icon">
                 <i class="ion ion-bag"></i>
               </div>
-              <a href="{{ url('pengiriman') }}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="{{ url('pengiriman') }}" class="small-box-footer">info lanjut<i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -48,12 +48,12 @@
               <div class="inner">
                 <h3>{{$lokasiTujuan->lokasi_name}} <sup style="font-size: 20px">{{$lokasiTujuan->total}}</sup></h3>
 
-                <p>Tujuan Lokasi Terbanyak 1 Bulan Terakhir</p>
+                <p>Tujuan Lokasi Terbanyak dalam 1 Bulan Terakhir</p>
               </div>
               <div class="icon">
                 <i class="ion ion-stats-bars"></i>
               </div>
-              <a href="{{ url('pengiriman') }}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="{{ url('pengiriman') }}" class="small-box-footer">info lanjut <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -63,12 +63,12 @@
               <div class="inner">
                 <h3>{{$jumlahBarangMax->barang_name}} <sup style="font-size: 20px"> {{$jumlahBarangMax->jumlah_barang}}</sup></h3>
 
-                <p>Barang Terbanyak di Pengiriman 1 Bulan Terakhir</p>
+                <p>Barang Terbanyak di Pengiriman dalam 1 Bulan Terakhir</p>
               </div>
               <div class="icon">
                 <i class="ion ion-person-add"></i>
               </div>
-              <a href="{{ url('pengiriman') }}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="{{ url('pengiriman') }}" class="small-box-footer">info lanjut <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
         </div>
