@@ -1,0 +1,884 @@
+{
+	"info": {
+		"_postman_id": "54f14dfa-f158-4906-b461-6d271318376a",
+		"name": "UTS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13310151",
+		"_collection_link": "https://bold-eclipse-197880.postman.co/workspace/Team-Workspace~5cd8b422-e294-450a-8aec-16f9f5a88271/collection/13310151-54f14dfa-f158-4906-b461-6d271318376a?action=share&creator=13310151&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Kurir",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"fek\",\r\n    \"email\": \"feka123@gmail.com\",\r\n    \"password\": \"fekalegi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/kurir",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"kurir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"fek\",\r\n    \"email\": \"feka@gmail.com\",\r\n    \"password\": \"fekalegi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/kurir",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"kurir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "detail",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"fek\",\r\n    \"email\": \"feka@gmail.com\",\r\n    \"password\": \"fekalegi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/kurir/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"kurir",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"fek\",\r\n    \"password\": \"fekalegi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/kurir/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"kurir",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY4NDE2ODYyNCwiZXhwIjoxNjg0MTcyMjI0LCJuYmYiOjE2ODQxNjg2MjQsImp0aSI6IkNQZ2x0blJKSlBNWHFKSGUiLCJzdWIiOjEsInBydiI6IjUwNTQ4NzMzOTkwODcyYWIwMWU2NjBjYzA0ZDlkMDY2YzE0NzFkN2UifQ.2pr7JSUSf-ZI27-VS1RdyUkO0bhlpk8nwxmppxzAEwk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"fek\",\r\n    \"email\": \"feka@gmail.com\",\r\n    \"password\": \"fekalegi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/kurir/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"kurir",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Barang",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY4NDE0OTQ0MSwiZXhwIjoxNjg0MTUzMDQxLCJuYmYiOjE2ODQxNDk0NDEsImp0aSI6Imd1Z2t5SnBldlJKQjl3RjkiLCJzdWIiOjEsInBydiI6IjUwNTQ4NzMzOTkwODcyYWIwMWU2NjBjYzA0ZDlkMDY2YzE0NzFkN2UifQ.BJlfXKVuAy8nOBhSJSszO5EbMEX-95hNV_drUuw3Fg8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"kode_barang\": \"FEK-001\",\r\n    \"nama_barang\": \"Kunci\",\r\n    \"stok_barang\": \"100\",\r\n    \"harga_barang\": \"5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/barang",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"barang"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY4NDE0OTQ0MSwiZXhwIjoxNjg0MTUzMDQxLCJuYmYiOjE2ODQxNDk0NDEsImp0aSI6Imd1Z2t5SnBldlJKQjl3RjkiLCJzdWIiOjEsInBydiI6IjUwNTQ4NzMzOTkwODcyYWIwMWU2NjBjYzA0ZDlkMDY2YzE0NzFkN2UifQ.BJlfXKVuAy8nOBhSJSszO5EbMEX-95hNV_drUuw3Fg8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"fek\",\r\n    \"email\": \"feka@gmail.com\",\r\n    \"password\": \"fekalegi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/barang",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"barang"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "detail",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY4NDE0OTQ0MSwiZXhwIjoxNjg0MTUzMDQxLCJuYmYiOjE2ODQxNDk0NDEsImp0aSI6Imd1Z2t5SnBldlJKQjl3RjkiLCJzdWIiOjEsInBydiI6IjUwNTQ4NzMzOTkwODcyYWIwMWU2NjBjYzA0ZDlkMDY2YzE0NzFkN2UifQ.BJlfXKVuAy8nOBhSJSszO5EbMEX-95hNV_drUuw3Fg8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"fek\",\r\n    \"email\": \"feka@gmail.com\",\r\n    \"password\": \"fekalegi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/barang/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"barang",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY4NDE1MzYyNywiZXhwIjoxNjg0MTU3MjI3LCJuYmYiOjE2ODQxNTM2MjcsImp0aSI6Ill5NlUyWWdTQ1IyektrVWoiLCJzdWIiOjEsInBydiI6IjUwNTQ4NzMzOTkwODcyYWIwMWU2NjBjYzA0ZDlkMDY2YzE0NzFkN2UifQ.eVkzk4mpmJcgBUVSxwvd6S2mEOsyf5EXpCQbMFWXDZI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"kode_barang\": \"FEK-001\",\r\n    \"nama_barang\": \"Kunci\",\r\n    \"stok_barang\": \"100\",\r\n    \"deskripsi\": \"Kunci untuk membuka sesuatu\",\r\n    \"harga_barang\": \"5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/barang/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"barang",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"fek\",\r\n    \"email\": \"feka@gmail.com\",\r\n    \"password\": \"fekalegi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/kurir/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"kurir",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Lokasi",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY4NDE2ODYyNCwiZXhwIjoxNjg0MTcyMjI0LCJuYmYiOjE2ODQxNjg2MjQsImp0aSI6IkNQZ2x0blJKSlBNWHFKSGUiLCJzdWIiOjEsInBydiI6IjUwNTQ4NzMzOTkwODcyYWIwMWU2NjBjYzA0ZDlkMDY2YzE0NzFkN2UifQ.2pr7JSUSf-ZI27-VS1RdyUkO0bhlpk8nwxmppxzAEwk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"kode_lokasi\": \"FEK-111\",\r\n    \"nama_lokasi\": \"Bekasi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/lokasi",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"lokasi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"fek\",\r\n    \"email\": \"feka@gmail.com\",\r\n    \"password\": \"fekalegi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/lokasi",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"lokasi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "detail",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"fek\",\r\n    \"email\": \"feka@gmail.com\",\r\n    \"password\": \"fekalegi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/lokasi/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"lokasi",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"kode_lokasi\": \"FEK-101\",\r\n    \"nama_lokasi\": \"Bekasi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/lokasi/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"lokasi",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"fek\",\r\n    \"email\": \"feka@gmail.com\",\r\n    \"password\": \"fekalegi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/lokasi/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"lokasi",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "pengiriman",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY4NDE2ODYyNCwiZXhwIjoxNjg0MTcyMjI0LCJuYmYiOjE2ODQxNjg2MjQsImp0aSI6IkNQZ2x0blJKSlBNWHFKSGUiLCJzdWIiOjEsInBydiI6IjUwNTQ4NzMzOTkwODcyYWIwMWU2NjBjYzA0ZDlkMDY2YzE0NzFkN2UifQ.2pr7JSUSf-ZI27-VS1RdyUkO0bhlpk8nwxmppxzAEwk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"no_pengiriman\": \"1\",\r\n    \"tanggal\": \"2022-09-01\",\r\n    \"lokasi_id\": 1,\r\n    \"barang_id\": 1,\r\n    \"jumlah_barang\": \"10\",\r\n    \"harga_barang\": \"10\",\r\n    \"kurir_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/pengiriman",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"pengiriman"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"fek\",\r\n    \"email\": \"feka@gmail.com\",\r\n    \"password\": \"fekalegi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/pengiriman",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"pengiriman"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "detail",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"fek\",\r\n    \"email\": \"feka@gmail.com\",\r\n    \"password\": \"fekalegi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/lokasi/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"lokasi",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"kode_lokasi\": \"FEK-101\",\r\n    \"nama_lokasi\": \"Bekasi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/pengiriman/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"pengiriman",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"kode_lokasi\": \"FEK-101\",\r\n    \"nama_lokasi\": \"Bekasi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/pengiriman/approve/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"pengiriman",
+								"approve",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"fek\",\r\n    \"email\": \"feka@gmail.com\",\r\n    \"password\": \"fekalegi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/lokasi/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"lokasi",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "localhost:8000/api/login",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var res = pm.response.json();\r",
+							"pm.environment.set('token', res.access_token);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"feka123@gmail.com\",\r\n    \"password\": \"fekalegi\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/login Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY4NDE0MDY0NywiZXhwIjoxNjg0MTQ0MjQ3LCJuYmYiOjE2ODQxNDA2NDcsImp0aSI6IkpINTMzT3RYdjQzMDRidG4iLCJzdWIiOjEsInBydiI6IjUwNTQ4NzMzOTkwODcyYWIwMWU2NjBjYzA0ZDlkMDY2YzE0NzFkN2UifQ.LXNLPW3fIVZ1eO4TVj4EhVIdq40cxCBFSoUEFApU4fA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/me",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"me"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
